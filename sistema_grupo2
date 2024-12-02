@@ -16,13 +16,13 @@
     <table class="table table-striped table-responsive">
       <thead>
         <tr>
-          <th>dni</th>
+          <th>Apellidos</th>
         </tr>
       </thead>
       <tbody>
         <?php
 
-	$servername = "34.132.24.150";
+	$servername = "35.202.92.227";
 $username = "root";
 $password = "123456";
 $dbname = "EXAMEN_PRETEL";
@@ -45,7 +45,7 @@ $conn->close();
         $resultado = mysqli_query($conn, $cadenaSQL);
 
         while ($fila = mysqli_fetch_object($resultado)) {
-         echo "<tr><td> " .$fila->DNI . 
+         echo "<tr><td> " .$fila->Apellidos . 
                  "</td></tr>";
        }
        ?>
